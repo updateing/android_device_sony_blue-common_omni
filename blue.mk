@@ -110,7 +110,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/sap.conf:system/etc/sap.conf
 
-
 # SEC Config
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/etc/sec_config:system/etc/sec_config
@@ -159,7 +158,7 @@ PRODUCT_PACKAGES += \
     libaudio-resampler \
     tinymix
 
-# BT
+# Bluetooth
 PRODUCT_PACKAGES += \
     hci_qcomm_init
 
@@ -167,8 +166,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     camera.sony \
     camera.msm8960 \
-    libmmcamera_interface2 \
-    libmmcamera_interface
+    libmmcamera_interface \
+    libmmcamera_interface2
 
 # OmniTorch
 PRODUCT_PACKAGES += \
@@ -178,14 +177,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     sensors.msm8960
 
-# Wifi service
-PRODUCT_PACKAGES += \
-    wcnss_service
-
-# WLAN
+# Wifi services
 PRODUCT_PACKAGES += \
     libwfcu \
-    mac-update
+    mac-update \
+    wcnss_service
 
 # Misc
 PRODUCT_PACKAGES += \
