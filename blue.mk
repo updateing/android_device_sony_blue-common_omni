@@ -185,6 +185,7 @@ PRODUCT_PACKAGES += \
 # Misc
 PRODUCT_PACKAGES += \
     librs_jni \
+    DeviceSettings \
     com.android.future.usb.accessory
 
 # Filesystem management tools
