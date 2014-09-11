@@ -14,8 +14,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
+TARGET_PROVIDES_ADRENO_DRIVER := true
 # qcom common
-$(call inherit-product, device/sony/qcom-common/qcom-common-2xx.mk)
+$(call inherit-product, device/sony/qcom-common/qcom-common.mk)
 
 COMMON_PATH := device/sony/blue-common
 
