@@ -100,6 +100,9 @@ BLUETOOTH_HCI_USE_MCT := true
 # Needed for blobs
 COMMON_GLOBAL_CFLAGS += -DNEEDS_VECTORIMPL_SYMBOLS
 
+# RIL
+COMMON_GLOBAL_CFLAGS += -DRIL_SUPPORTS_SEEK
+
 # Vold
 TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/msm_hsusb/gadget/lun%d/file
 
